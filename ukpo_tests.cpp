@@ -202,7 +202,7 @@ public:
 			for (int i = 0; i < row; i++)
 				std::cout << "X" << i + 1 << " = " << sol_matr[i] << std::endl;
 		else
-			std::cout << "Eh... No. " << std::endl;
+			std::cout << "Eh..... No. " << std::endl;
 	}
 
 	bool Calculate(double** temp_matr)
