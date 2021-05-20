@@ -40,12 +40,12 @@ int inputint()
 	}
 	return x;
 }
-
+//Ввод числа с плавающей запятой
 double inputdouble()
 {
-	double x; int i = 0; //show message in actual program, not here
+	double x; int i = 0;
 	std::cin >> x;
-	while (std::cin.fail() || std::cin.get() != '\n') // Eternal gratitude to my friend who helped me with this part
+	while (std::cin.fail() || std::cin.get() != '\n')
 	{
 		std::cin.clear();
 		std::cin.ignore(std::cin.rdbuf()->in_avail());
@@ -57,6 +57,7 @@ double inputdouble()
 	return x;
 }
 
+//Ввод одномерной матрицы чисел с плавающей запятой
 double* inputdouble1dmass(double* mass, int n)
 {
 	for (int i = 0; i < n; i++)
@@ -67,6 +68,7 @@ double* inputdouble1dmass(double* mass, int n)
 	return mass;
 }
 
+//Ввод двухмерной матрицы чисел с плавающей запятой
 double** inputdouble2dmass(double** mass, int n, int m)
 {
 	for (int i = 0; i < n; i++)
@@ -77,6 +79,7 @@ double** inputdouble2dmass(double** mass, int n, int m)
 		}
 	return mass;
 }
+
 
 bool dementia(int n)
 {
