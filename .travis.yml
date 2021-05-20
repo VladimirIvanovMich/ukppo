@@ -3,7 +3,6 @@ compiler:
   - g++
 os:
   - linux
-
 addons:
   apt:
     packages:
